@@ -15,10 +15,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
-      <div className="bg-blueish min-h-screen"> {/* Set background of page */}
+  return (<html>
+    <body>
+    <div className="bg-blueish min-h-screen"> {/* Set background of page */}
         <Navbar /> {/* Import Navbar */}
         {children}
       </div>
+    </body>
+      </html>
   )
 }
