@@ -1,9 +1,16 @@
-'use client';
+"use client";
+import { CampusDropdown } from "./components/selectCampus/SelectCampus";
+import "../styles/globals.css";
+import RootLayout from "./layout";
 
-export default function page() {
+type pageProps = {};
+
+const page: React.FC<pageProps> = () => {
   return (
     <div>
-      <h1>test</h1>
+      <CampusDropdown />
     </div>
-  )
-}
+  );
+};
+
+export default page;

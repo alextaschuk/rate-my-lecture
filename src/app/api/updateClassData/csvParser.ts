@@ -1,9 +1,10 @@
+// will check for updates to Donney's repo. If changes are made to the repo (e.g., new class data is added),
+// the Firestore database will be updated accordingly.
 "use client";
 
 import { useEffect, useState } from "react";
 import Papa from "papaparse";
 import { promises as fs } from "fs";
-
 
 const url =
   "https://raw.githubusercontent.com/DonneyF/ubc-pair-grade-data/0e40aa0b80210d0a53e86e15bdc066995a176cab/tableau-dashboard-v2/UBCO/2022W/UBCO-2022W-COSC.csv";
