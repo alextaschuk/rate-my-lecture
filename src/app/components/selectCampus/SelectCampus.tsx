@@ -4,9 +4,6 @@ import app from "../../api/firebase/firebase";
 import { db } from "../../api/firebase/firebase";
 import { auth } from "../../api/firebase/firebase";
 
-// just use the fucking select tag from barebones basic ass html
-
-// https://www.w3schools.com/tags/tag_select.asp
 const CampusDropdown: React.FC = () => {
 
   const [campus, setCampus] = useState("Okanagan");
